@@ -14,10 +14,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var trueButton: UIButton!
     @IBOutlet weak var falseButton: UIButton!
     
+    let quiz = [
+        "Two + Four is equal to Six",
+        "Five - Three is greater than One",
+        "Three + Eight is less than Ten"
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        questionLabel.text = "Two plus Four is equal to Six?"
+        questionLabel.text = quiz[0]
         
     }
 
