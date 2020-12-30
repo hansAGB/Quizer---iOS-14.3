@@ -13,6 +13,8 @@
 		C198248D259BD804003A58C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C198248B259BD804003A58C0 /* Main.storyboard */; };
 		C198248F259BD80B003A58C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C198248E259BD80B003A58C0 /* Assets.xcassets */; };
 		C1982492259BD80B003A58C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1982490259BD80B003A58C0 /* LaunchScreen.storyboard */; };
+		C1A5FBC9259CE4E30020F909 /* playstore.png in Resources */ = {isa = PBXBuildFile; fileRef = C1A5FBCB259CE4E30020F909 /* playstore.png */; };
+		C1A5FBCD259CE4EE0020F909 /* appstore.png in Resources */ = {isa = PBXBuildFile; fileRef = C1A5FBCF259CE4EE0020F909 /* appstore.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		C198248E259BD80B003A58C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1982491259BD80B003A58C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1982493259BD80B003A58C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1A5FBCA259CE4E30020F909 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/playstore.png; sourceTree = "<group>"; };
+		C1A5FBCE259CE4EE0020F909 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/appstore.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		C1982484259BD804003A58C0 /* Quizer iOS 14.3 */ = {
 			isa = PBXGroup;
 			children = (
+				C1A5FBCB259CE4E30020F909 /* playstore.png */,
+				C1A5FBCF259CE4EE0020F909 /* appstore.png */,
 				C1982485259BD804003A58C0 /* AppDelegate.swift */,
 				C1982487259BD804003A58C0 /* SceneDelegate.swift */,
 				C1982489259BD804003A58C0 /* ViewController.swift */,
@@ -125,8 +131,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1982492259BD80B003A58C0 /* LaunchScreen.storyboard in Resources */,
+				C1A5FBCD259CE4EE0020F909 /* appstore.png in Resources */,
 				C198248F259BD80B003A58C0 /* Assets.xcassets in Resources */,
 				C198248D259BD804003A58C0 /* Main.storyboard in Resources */,
+				C1A5FBC9259CE4E30020F909 /* playstore.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +168,22 @@
 				C1982491259BD80B003A58C0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C1A5FBCB259CE4E30020F909 /* playstore.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1A5FBCA259CE4E30020F909 /* Base */,
+			);
+			name = playstore.png;
+			sourceTree = "<group>";
+		};
+		C1A5FBCF259CE4EE0020F909 /* appstore.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1A5FBCE259CE4EE0020F909 /* Base */,
+			);
+			name = appstore.png;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
