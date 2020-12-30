@@ -30,7 +30,7 @@
                                             <constraint firstAttribute="height" constant="80" id="5vd-Aa-IRz"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="true" backgroundImage="Rectangle"/>
+                                        <state key="normal" title="True" backgroundImage="Rectangle"/>
                                         <connections>
                                             <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uCX-mm-CuK"/>
                                         </connections>
@@ -41,7 +41,7 @@
                                             <constraint firstAttribute="height" constant="80" id="oZd-Eu-RxQ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="false" backgroundImage="Rectangle"/>
+                                        <state key="normal" title="False" backgroundImage="Rectangle"/>
                                         <connections>
                                             <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JNs-Vz-rLt"/>
                                         </connections>
