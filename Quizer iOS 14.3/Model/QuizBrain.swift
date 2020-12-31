@@ -1,19 +1,13 @@
 //
-//  ViewController.swift
+//  QuizBrain.swift
 //  Quizer iOS 14.3
 //
-//  Created by Hans Aangeenbrug on 29/12/2020.
+//  Created by Hans Aangeenbrug on 31/12/2020.
 //
 
-import UIKit
+import Foundation
 
-class ViewController: UIViewController {
-
-    @IBOutlet weak var questionLabel: UILabel!
-    @IBOutlet weak var progressBar: UIProgressView!
-    @IBOutlet weak var trueButton: UIButton!
-    @IBOutlet weak var falseButton: UIButton!
-    
+struct QuizBrain {
     let quiz = [
         Question(q: "A slug's blood is green.", a: "True"),
         Question(q: "Approximately one quarter of human bones are in the feet.", a: "True"),
@@ -31,34 +25,23 @@ class ViewController: UIViewController {
     
     var questionNumber = 0
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        UpdateUI()
+    func checkAnswer(_ userAnswer: String) -> Bool {
+        return (quiz[questionNumber].answer == userAnswer)
     }
-
-    @IBAction func answerButtonPressed(_ sender: UIButton) {
-        let userAnswer = sender.currentTitle!
-        let correctAnswer = quiz[questionNumber].answer
-        
-        if userAnswer == correctAnswer {
-            print("Right")
-        } else {
-            print("Wrong")
-        }
-        
+    
+    func getQuestionText() -> String {
+        return quiz[questionNumber].question
+    }
+    
+    func getProgress() -> Float {
+        return Float(questionNumber + 1) / Float(quiz.count)
+    }
+    
+    mutating func nextQuestion() {
         if questionNumber < (quiz.count - 1) {
             questionNumber += 1
         } else {
             questionNumber = 0
         }
-        UpdateUI()
-
     }
-    
-    func UpdateUI() {
-        questionLabel.text = quiz[questionNumber].question
-    }
-    
 }
-
